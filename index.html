@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+    <div class="start"></div>
+    <div class="container quizcontainer" style="display: none;">
+        <div class="container question"><p>lol</p></div>
 
-    
+        <div class="timer">
+            <div class="counter">6</div>
+            <div class="btimeguage"></div>
+            <div class="timeguage"></div>
+        </div>
+
+        <div class="qusetchoices">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>        
+            <div class="choice" id="C" onclick="checkAnser('C')"></div>
+        </div>
 
 
 
-
-
-
-<script src="script.js"></script>
+    </div>
+    <div class="score" style="display: none;"><p>50%</p></div>
+    <script src="script.js"></script>
 </body>
 </html>
