@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="styles.css">
-    <title>Quiz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Quiz</title>
 </head>
 <body>
-    <div class="start"></div>
-    <div class="container quizcontainer" style="display: none;">
-        <div class="container question"><p>lol</p></div>
-
-        <div class="timer">
-            <div class="counter">6</div>
-            <div class="btimeguage"></div>
-            <div class="timeguage"></div>
+  <div class="containers d-flex justify-content-center">
+    <div class="question-container hide">
+      <div class="question">Question</div>
+      <div class="answer-buttons btn-grid justify-content-center"></div>
+        <div class="container">
+          <button type="button" class="btn btn-primary colmun-md-6">Question 1</button>
+          <button type="button" class="btn btn-primary colmun-md-6">Question 1</button>
         </div>
-
-        <div class="qusetchoices">
-            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-            <div class="choice" id="B" onclick="checkAnswer('B')"></div>        
-            <div class="choice" id="C" onclick="checkAnser('C')"></div>
+        <div class="container">
+          <button type="button" class="btn btn-primary colmun-md-6">Question 1</button>
+          <button type="button" class="btn btn-primary colmun-md-6">Question 1</button>
         </div>
-
-
 
     </div>
-    <div class="score" style="display: none;"><p>50%</p></div>
-    <script src="script.js"></script>
+    <div class="controls">
+      <button type="button" id= "start-btn" class="start-btn btn btn-primary colmun-md-6">Start</button>
+      <button type="button" id="start-btn" class="next-btn btn btn-primary colmun-md-6 hide">Next</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>  
 </body>
 </html>
